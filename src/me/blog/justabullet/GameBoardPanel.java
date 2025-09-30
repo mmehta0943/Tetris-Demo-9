@@ -170,7 +170,9 @@ public class GameBoardPanel extends JPanel implements ActionListener {
 	}
 
 	public void pause() {
+		// If game has ended, restart it
 		if (!isStarted) {
+			start();
 			return;
 		}
 
